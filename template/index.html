@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>{{ title }}</h1>
+{% for i in queryset %}
+<div>
+    <a href="/dancer_detail/{{ i.id }}"><h2> {{ i.dancer_name }}</h2></a>
+    <p> {{ i.crew_id }}</p>
+    <p><i> {{ i.style_id }}</i></p>
+</div>
+{% endfor %}
+</body>
+</html>

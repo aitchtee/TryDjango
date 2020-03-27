@@ -25,8 +25,8 @@ class CrewModelAdmin(admin.ModelAdmin):
 
 
 class DancerModelAdmin(admin.ModelAdmin):
-    list_display = ['id', 'crew_id', 'style_id', 'dancer_name']
-    list_display_links = ['id', 'crew_id', 'style_id', 'dancer_name']
+    list_display = ['id', 'dancer_name', 'crew_id', 'style_id']
+    list_display_links = ['id', 'dancer_name', 'crew_id', 'style_id']
     ordering = ['id']
 
     class Meta:

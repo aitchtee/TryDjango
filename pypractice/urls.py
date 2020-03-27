@@ -19,4 +19,8 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', 'pydb.views.dancer_list'),
+    url(r'^dancer_detail/(?P<id>\d+)/$', 'pydb.views.dancer_detail'),
+    url(r'^dancer_create/$', 'pydb.views.dancer_create'),
+    url(r'^dancer_update/(?P<id>\d+)/$', 'pydb.views.dancer_update'),
 ]

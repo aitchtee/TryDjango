@@ -2,6 +2,8 @@ from django.db import models
 
 # Create your models here.
 
+class Meta:
+    db_table = 'pydb'
 
 class Style(models.Model):
     id = models.AutoField(primary_key=True)
